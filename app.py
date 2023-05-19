@@ -10,7 +10,7 @@ from FinanceInfo import finance
 load_dotenv(find_dotenv()) # read local .env file
 
 openai.organization = "org-9mAmm2qh9EtzBOt8PVQsQve5"
-openai.api_key = 'OPENAI_API_KEY'
+openai.api_key = os.getenv("OPENAI_API_KEY")
 finaceIncall = 0
 data="""
     Your name is Adam from Fractal Company. Your service is to collect queries related to Fractal Company only and Provide Summerized Answer in 30 words and give in list way.If the query is not related to Fractal Company, say 'no data found'. \
