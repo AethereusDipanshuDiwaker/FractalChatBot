@@ -12,3 +12,4 @@ python-dotenv
 panel
 requests
 beautifulsoup4
+bardapi
