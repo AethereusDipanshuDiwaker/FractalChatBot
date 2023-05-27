@@ -10,8 +10,7 @@ from bardapi import Bard
 load_dotenv(find_dotenv()) # read local .env file
 
 openai.organization = "org-9mAmm2qh9EtzBOt8PVQsQve5"
-apiKey="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"
-openai.api_key = apiKey
+openai.api_key = os.getenv("OPENAI_API_KEY")
 finaceIncall = 0
 NewsIncall = 0
 BasicIncall = 0
