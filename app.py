@@ -6,7 +6,6 @@ import requests
 import re
 import json
 from bardapi import Bard
-from FinanceInfo import finance, news, basicInfo
 
 load_dotenv(find_dotenv()) # read local .env file
 
